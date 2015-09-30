@@ -1,0 +1,45 @@
+{
+  "name": "@mattdesl/ghpages",
+  "version": "1.0.0",
+  "description": "quick script which deploys to gh-pages branch",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "ghpages": "./ghpages.sh"
+  },
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "ghpages",
+    "deploy",
+    "gh",
+    "pages",
+    "page",
+    "build",
+    "run",
+    "branch",
+    "site",
+    "static",
+    "dist",
+    "distribute",
+    "distro",
+    "distribution",
+    "deploys"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/ghpages.git"
+  },
+  "homepage": "https://github.com/mattdesl/ghpages",
+  "bugs": {
+    "url": "https://github.com/mattdesl/ghpages/issues"
+  }
+}
