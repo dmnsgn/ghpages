@@ -12,11 +12,30 @@ npm install @mattdesl/ghpages -g
 
 ## Usage
 
-In a module folder with `npm run build` script, and with a clean working directory on your default branch (i.e. `master`), simply run the following:
+`cd` to your module directory. Make sure it has a `build` script in `package.json`:
+
+```json
+{
+  "scripts": {
+    "build": "browserify index.js > bundle.js"
+  }
+}
+```
+
+If you don't have a `gh-pages`, make sure to create one:
+
+```sh
+git branch gh-pages
+```
+
+
+Now, with a clean git working directory, and on the default (i.e. `master`) branch, just run the following to push to gh-pages:
 
 ```sh
 ghpages
 ```
+
+This will check out `gh-pages` branch, merge master into it, `npm run build`, then commit and push the new build and switch back to master.
 
 ## License
 
