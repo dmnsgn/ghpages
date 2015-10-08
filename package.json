@@ -1,6 +1,6 @@
 {
   "name": "@mattdesl/ghpages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "quick script which deploys to gh-pages branch",
   "main": "index.js",
   "license": "MIT",
