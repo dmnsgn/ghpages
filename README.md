@@ -22,20 +22,19 @@ npm install @mattdesl/ghpages -g
 }
 ```
 
-If you don't have a `gh-pages`, make sure to create one:
-
-```sh
-git branch gh-pages
-```
-
-
 Now, with a clean git working directory, and on the default (i.e. `master`) branch, just run the following to push to gh-pages:
 
 ```sh
 ghpages
 ```
 
-This will check out `gh-pages` branch, merge master into it, `npm run build`, then commit and push the new build and switch back to master.
+This will check out `gh-pages` branch (creating it if necessary), merge master into it, `npm run build`, then commit and push the new build and switch back to master.
+
+In some cases, you may need to modify the `.gitignore` of your `gh-pages` branch to ensure that `bundle.js` is pushed to git. You can pass the `-i` flag which will also remove `bundle.js` from your current directory's `.gitignore` before committing.
+
+```sh
+ghpages -i
+```
 
 ## License
 
