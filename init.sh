@@ -3,7 +3,7 @@ PREVIOUS_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 if [ -z "$(git status --porcelain)" ]; then 
   # Working directory clean
   echo "Deploying gh-pages..."
-  git checkout -B gh-pages
+  git checkout gh-pages
   git merge master --no-edit
   npm run build
   git add .
