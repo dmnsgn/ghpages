@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Modifies .gitignore to remove bundle.js
+// Modifies .gitignore to remove web_modules and bundle.js
 var fs = require('fs')
 var path = require('path')
 
@@ -11,6 +11,7 @@ fs.readFile(ignores, 'utf8', function (err, data) {
     console.error('No .gitignore found to modify, skipping.')
     process.exit(0)
   }
+  data = data.replace(/^web_modules[\n\r]?/gm, '')
   data = data.replace(/^bundle.js[\n\r]?/gm, '')
   fs.writeFile(ignores, data, function (err) {
     if (err) {

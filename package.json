@@ -1,5 +1,5 @@
 {
-  "name": "@mattdesl/ghpages",
+  "name": "@dmnsgn/ghpages",
   "version": "1.2.0",
   "description": "quick script which deploys to gh-pages branch",
   "main": "index.js",
